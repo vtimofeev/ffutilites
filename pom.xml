@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.timoff</groupId>
+    <artifactId>FFUtilites</artifactId>
+    <version>1.0</version>
+    <packaging>swc</packaging>
+
+    <name>FFUtilites</name>
+
+
+    <properties>
+        <flexmojos.version>4.0-beta-2</flexmojos.version>
+        <fdk.version>4.1.0.16076</fdk.version>
+        <fp.version>10.0.42</fp.version>
+    </properties>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.flexmojos</groupId>
+                <artifactId>flexmojos-maven-plugin</artifactId>
+                <version>4.0-beta-2</version>
+                <extensions>true</extensions>
+
+                <dependencies>
+                    <dependency>
+                        <artifactId>compiler</artifactId>
+                        <groupId>com.adobe.flex</groupId>
+                        <version>${fdk.version}</version>
+                        <type>pom</type>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+
+
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.flex.framework</groupId>
+            <artifactId>flex-framework</artifactId>
+            <version>${fdk.version}</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
+    <!--
+    <dependencies>
+        <dependency>
+            <groupId>com.adobe.flex.framework</groupId>
+            <artifactId>flex-framework</artifactId>
+            <version>${fdk.version}</version>
+            <type>pom</type>
+        </dependency>
+
+                  </dependencies> -->
+</project>

@@ -1,0 +1,9 @@
+syntax: glob
+.idea
+target
+.hgignore
+.settings/org.eclipse.core.resources.prefs
+.settings
+.project
+.flexLibProperties
+FFUtilites.iml

@@ -1,0 +1,69 @@
+package com.timoff.services.cache {
+import com.timoff.services.loader.data.LoaderDataObject;
+
+import flash.display.DisplayObject;
+import flash.display.MovieClip;
+import flash.geom.Rectangle;
+import flash.utils.Dictionary;
+import flash.utils.Timer;
+
+public class Cache {
+    private static var _instance:Cache;
+    private var _cache:Dictionary = new Dictionary(true);
+    private var _bytes:Number = 0;
+    private var _gcTimer:Timer;
+
+    public function Cache() {
+    }
+
+
+    /**
+     * Adds data to the cache, calculate summary bytes length.
+     *
+     * @param value
+     *
+     */
+    public function setData(value:LoaderDataObject):void {
+        if (!value.content)
+            return;
+        if (_cache[value.url])
+            return;
+
+        _cache[value.url] = value;
+        _bytes += value.bytes;
+        return;
+    }
+
+
+    public function getContent(url:String):* {
+        if (!_cache[url]) {
+            return null;
+        }
+
+        var content:* = _cache[url].content;
+        (_cache[url] as LoaderDataObject).requestCount++;
+        return content;
+    }
+
+    public function getData(url:String):LoaderDataObject {
+        if (!_cache[url]) return null;
+        (_cache[url] as LoaderDataObject).requestCount++;
+        return _cache[url];
+    }
+
+    public function get totalBytes():int {
+        return _bytes;
+    }
+
+    // -----------------------------------------------------------------
+    // Static methods
+    // -----------------------------------------------------------------
+    public static function get instance():Cache {
+        if (!_instance)
+            _instance = new Cache();
+
+        return _instance;
+    }
+
+}
+}
