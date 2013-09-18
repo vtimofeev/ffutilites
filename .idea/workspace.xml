@@ -57,6 +57,7 @@
     <file path="$PROJECT_DIR$/../../GeneralPlayer/OSMFPlayer/src/ru/channelOne/data/PeerMessageTypes.as" changelist="c04160a0-7d9f-4446-8bce-8ec3b24b9a15" time="1379495379062" ignored="false" />
     <file path="/PeerMessageTypes.as" changelist="c04160a0-7d9f-4446-8bce-8ec3b24b9a15" time="1379495356781" ignored="false" />
     <file path="$PROJECT_DIR$/../../GeneralPlayer/OSMFPlayer/src/ru/channelOne/model/P2PDataController.as" changelist="c04160a0-7d9f-4446-8bce-8ec3b24b9a15" time="1379495376640" ignored="false" />
+    <file path="$PROJECT_DIR$/../../GeneralPlayer/OSMFPlayer/libs/ffutilites_1_1.swc!/library.swf" changelist="c04160a0-7d9f-4446-8bce-8ec3b24b9a15" time="1379496695937" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,10 +133,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cache.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Cache.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/timoff/services/cache/Cache.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="0" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.540634">
+            <state line="88" column="0" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,15 +153,6 @@
       </file>
       <file leaf-file-name="BasicLoadManager.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/timoff/services/loader/managers/BasicLoadManager.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadManager.as" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/timoff/services/loader/managers/LoadManager.as">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -225,7 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/timoff/services/loader/managers/LoadManager.as" />
         <option value="$PROJECT_DIR$/src/com/timoff/services/loader/loaders/DataLoader.as" />
         <option value="$PROJECT_DIR$/src/com/timoff/services/log/CallerLog.as" />
         <option value="$PROJECT_DIR$/src/com/timoff/services/log/LocalLog.as" />
@@ -241,6 +241,7 @@
         <option value="$PROJECT_DIR$/src/com/timoff/services/time/BasicTimerObject.as" />
         <option value="$PROJECT_DIR$/src_tests/BasicTestTests.as" />
         <option value="$PROJECT_DIR$/src/com/timoff/services/cache/Cache.as" />
+        <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
   </component>
@@ -1293,11 +1294,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StaticTests.as">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="49" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.0" />
@@ -1394,7 +1390,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/timoff/services/cache/Cache.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="0" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.540634">
+        <state line="88" column="0" selection-start="2035" selection-end="2035" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="22" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
